@@ -8,65 +8,61 @@
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
-<body style="min-height: 1500px;">
-    <div class=" sm:w-[300px]m md:w-[700px] bg-gradient-to-r from-blue-800 to-white  border lg:w-[100%] h-[640px]   pt-[30px] ">
-        <div class=" md:w-[150px] sm:w-[260px] lg:w-[300px] h-[590px] bg-white  ml-4 rounded-[15px] pt-[30px] shadow">
+<body style="min-height: 100vh;">
+    <div class=" sm:w-[300px]m md:w-[700px] bg-gradient-to-r from-blue-800 to-white  border lg:w-[100%] h-[100vh]   pt-[40px]  pl-20">
+        <div class=" md:w-[150px] sm:w-[260px] lg:w-[300px] h-[700px] bg-white  ml-4 rounded-[15px] pt-[30px] shadow">
             <img src="images/ProprintersLogo2024PNG.png" class="w-[150px] h-[50px] ml-16">
             <!-- <p class=" font-[700] ml-[30px] text-blue-700 text-4xl " style="text-shadow: 2px 2px pink;"></p> -->
             <hr style="width: 260px; height: 2px; background-color: rgb(214, 203, 203); margin-top: 20px; margin-left: 13px;" class="md:w-[160px]" >
             <a href=""> 
-                <div class="flex text-1xl font-[500] ml-[40px] mt-[20px] text-blue-700 hover:bg-gradient-to-r from-yellow-400 to-blue-700 hover:h-10 hover:w-[150px] hover:pt-2 hover:rounded-[25px] hover:text-white hover:px-8 "><ion-icon class="mt-1" name="car-outline"></ion-icon><p class="ml-1">Dashboard</p></div>
+                <div class="flex text-1xl font-[500] ml-[40px] mt-[20px] text-blue-700 hover:bg-gradient-to-r from-yellow-400 to-blue-700 hover:h-10 hover:w-[150px] hover:pt-2 hover:rounded-[25px] hover:text-white hover:px-8 "><ion-icon class="mt-1" name="car-outline"></ion-icon><p class="ml-1">Dashboard</p></div><br>
             </a>
             
             <div onclick="btn1()" class="flex  cursor-pointer text-1xl font-[500] ml-[40px] mt-[15px] text-blue-700 hover:bg-gradient-to-r from-yellow-400 to-blue-700 hover:h-10 hover:w-[150px] hover:pt-2 hover:rounded-[25px] hover:text-white hover:px-8 "> <ion-icon class="mt-1" name="pie-chart-outline"></ion-icon><p class="ml-1" > Client</p>
-            </div>
+            </div><br>
             <div class="text-1xl font-[500] ml-[50px] mt-[15px] text-blue-700  to-blue-700 "  >
-                <a href=""><p style="display:none;" id="client">Add Client</p></a>
-                <a href=""><p style="display:none ;" id="manage">Manage Client</p></a>
+                <a href=""><p class="hover:bg-gradient-to-r from-yellow-400 to-blue-700 hover:h-10 hover:w-[150px] hover:pt-2 hover:rounded-[25px] hover:text-white hover:px-8" style="display:none;" id="client">Add Client</p></a>
+                <a href=""><p class="mt-2 hover:bg-gradient-to-r from-yellow-400 to-blue-700 hover:h-10 hover:w-[150px] hover:pt-2 hover:rounded-[25px] hover:text-white hover:px-4" style="display:none ;" id="manage">Manage Client</p></a>
                  </div>
             
             
-            <div onclick="btn2()" class="flex cursor-pointer text-1xl font-[500] ml-[40px] mt-[15px] text-blue-700 hover:bg-gradient-to-r from-yellow-400 to-blue-700 hover:h-10 w-[150px] hover:pt-2 hover:rounded-[25px] hover:text-white hover:px-8 "><ion-icon class="mt-1" name="bar-chart-outline"></ion-icon> <p class="ml-1">Order</p></div>
+            <div onclick="btn2()" class="flex cursor-pointer text-1xl font-[500] ml-[40px] mt-[15px] text-blue-700 hover:bg-gradient-to-r from-yellow-400 to-blue-700 hover:h-10 w-[150px] hover:pt-2 hover:rounded-[25px] hover:text-white hover:px-8 "><ion-icon class="mt-1" name="bar-chart-outline"></ion-icon> <p class="ml-1">Order</p></div><br>
             <div class="text-1xl font-[500] ml-[50px] mt-[15px] text-blue-700  to-blue-700 " >
-                <a href=""><p style="display:none;" id="create" >Create Order</p></a>
-                <a href=""><p style="display:none;" id="order" >Manage Order</p></a>
-                 </div>
-
-            
-            
-            
-                <div onclick="btn3()" class="flex cursor-pointer text-1xl  font-[500] ml-[40px] mt-[15px] text-blue-700 hover:bg-gradient-to-r from-yellow-400 to-blue-700 hover:h-10 w-[150px] hover:pt-2 hover:rounded-[25px] hover:text-white hover:px-8 "><ion-icon class="mt-1" name="copy-outline"></ion-icon> <p class="ml-1">Booking</p></div>
+                <a href=""><p class="hover:bg-gradient-to-r from-yellow-400 to-blue-700 hover:h-10 hover:w-[150px] hover:pt-2 hover:rounded-[25px] hover:text-white hover:pl-6" style="display:none;" id="create" >Create Order</p></a>
+                <a href=""><p class="mt-2 hover:bg-gradient-to-r from-yellow-400 to-blue-700 hover:h-10 hover:w-[150px] hover:pt-2 hover:rounded-[25px] hover:text-white hover:pl-6" style="display:none;" id="order" >Manage Order</p></a>
+           </div>
+                <div onclick="btn3()" class="flex cursor-pointer text-1xl  font-[500] ml-[40px] mt-[15px] text-blue-700 hover:bg-gradient-to-r from-yellow-400 to-blue-700 hover:h-10 w-[150px] hover:pt-2 hover:rounded-[25px] hover:text-white hover:px-8 "><ion-icon class="mt-1" name="copy-outline"></ion-icon> <p class="ml-1">Booking</p></div><br>
                 <div class="text-1xl font-[500] ml-[50px] mt-[15px] text-blue-700  to-blue-700 " >
-                    <a href=""><p style="display:none;" id="bookings">create Bookings</p></a>
-                    <a href=""><p style="display:none;" id="all">All Bookings</p></a>
+                    <a href=""><p class="hover:bg-gradient-to-r from-yellow-400 to-blue-700 hover:h-10 hover:w-[150px] hover:pt-2 hover:rounded-[25px] hover:text-white hover:pl-4" style="display:none;" id="bookings">Create Bookings</p></a>
+                    <a href=""><p class="mt-2 hover:bg-gradient-to-r from-yellow-400 to-blue-700 hover:h-10 hover:w-[150px] hover:pt-2 hover:rounded-[25px] hover:text-white hover:pl-8" style="display:none;" id="all">All Bookings</p></a>
                      </div>
     
             
             
-            <div onclick="btn4()" class="flex cursor-pointer text-1xl  font-[500] ml-[40px] mt-[15px] text-blue-700 hover:bg-gradient-to-r from-yellow-400 to-blue-700 hover:h-10 w-[150px] hover:pt-2 hover:rounded-[25px] hover:text-white hover:px-8 "><ion-icon class="mt-1" name="notifications-outline"></ion-icon><p class="ml-1"> Payment</p></div>
+            <div onclick="btn4()" class="flex cursor-pointer text-1xl  font-[500] ml-[40px] mt-[15px] text-blue-700 hover:bg-gradient-to-r from-yellow-400 to-blue-700 hover:h-10 w-[150px] hover:pt-2 hover:rounded-[25px] hover:text-white hover:px-8 "><ion-icon class="mt-1" name="notifications-outline"></ion-icon><p class="ml-1"> Payment</p></div><br>
             <div class="text-1xl font-[500] ml-[50px] mt-[15px] text-blue-700  to-blue-700 " >
                 <a href=""><p id="payment" style="display: none;">Total Payment History</p></a>
                 
-                 </div>
+            </div>
 
             
                 
             
         </div>
-        <div style="height: 60px; width: 1000px; background-color:white;" class=" sm:hidden md:block lg:block ml-[350px] mt-[-580px] rounded-[10px] shadow ">
-        <input class="bg-blue-800 text-blue-500 w-[200px] outline-none placeholder:text-yellow-400 h-[30px] mt-4 ml-4 pl-4 rounded-[20px] " type="search" placeholder="Search">
+        <div style="height: 60px; width: 1010px; background-color:white;" class=" sm:hidden md:block lg:block ml-[350px] mt-[-697px] rounded-[10px] shadow ">
+        <input class="bg-blue-800 w-[200px] outline-none text-yellow-400 placeholder:text-yellow-400 h-[35px] mt-[13px] ml-4 pl-4 rounded-[20px] " type="search" placeholder="Search">
         <ion-icon class="text-yellow-400 ml-[-40px] mt-4" name="search-outline"></ion-icon>
             <input type="date" class="ml-28 border-white outline-none text-blue-800" >
-        <div class="bg-blue-800 w-[100px] h-[30px] ml-[870px] mt-[-25px] rounded-[20px]">
+        <div class="bg-blue-800 w-[100px] h-[35px] ml-[870px] mt-[-35px] rounded-[20px]">
             <ion-icon class=" text-[11px] text-blue-800 ml-10 mt-3" name="list-outline"></ion-icon>
             <p class="text-[11px] text-white ml-14 pt-2 font-[500] mt-[-29px]"> List</p>
         </div>
-        <div class="bg-yellow-400 w-[100px] h-[30px] ml-[800px] mt-[-30px] rounded-[20px]">
+        <div class="bg-yellow-400 w-[100px] h-[35px] ml-[800px] mt-[-35px] rounded-[20px] pt-1">
             <ion-icon name="copy-outline" class="text-[11px] ml-6 mt-2"></ion-icon>
             <p class="text-[11px] text-blue-800 ml-10 pt-2 font-[500] mt-[-28px]"> Card</p>
         </div>
         </div>
-        <div style="height: 280px; width: 1010px; background-color:white;" class=" sm:hidden md:hidden lg:block ml-[350px] mt-[20px] rounded-[10px] shadow">
+        <div style="height: 360px; width: 1010px; background-color:white;" class=" sm:hidden md:hidden lg:block ml-[350px] mt-[20px] rounded-[10px] shadow">
         <h1 class="text-2xl text-blue-800 ml-8 pt-4 font-[600]">Order</h1>
         <p class="text-[11px] ml-8 mt-1 text-blue-800"><b class="text-3 ">117 total,</b> proceed to resolve them</p>
         <h1 class="text-3xl text-blue-800 ml-[780px] mt-[-50px] font-[700]">94</h1>
@@ -121,10 +117,10 @@
         </table>
     </div>
         <div class="sm:hidden md:hidden lg:block">
-            <div style="height: 200px; width: 490px; background-color:white;" class="ml-[350px] mt-[20px] rounded-[10px] shadow">
+            <div style="height: 239px; width: 490px; background-color:white;" class="ml-[350px] mt-[20px] rounded-[10px] shadow">
             <p class="text-blue-800 pl-[20px] pt-[20px] text-2xl" >Bookings</p>
             </div>
-            <div style="height: 200px; width: 490px; background-color:rgb(52, 52, 199);" class="ml-[856px] mt-[-200px] rounded-[10px] shadow  relaive">
+            <div style="height: 239px; width: 506px; background-color:rgb(52, 52, 199);" class="ml-[856px] mt-[-240px] rounded-[10px] shadow  relaive">
                 <p class="text-white pl-[20px] pt-[20px] text-2xl" >Customer's Interaction</p>
 
                </div>
