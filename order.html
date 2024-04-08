@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order</title>
+    <script src="/tailwind2/tailwind.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</head>
+<body>
+    <div class=" sm:w-[300px]m md:w-[700px] bg-gradient-to-r from-blue-800 to-white  border lg:w-[100%] h-[640px]   pt-[30px] ">
+        <div class=" md:w-[150px] sm:w-[260px] lg:w-[300px] h-[590px] bg-white  ml-4 rounded-[15px] pt-[30px] shadow">
+            <img src="images/ProprintersLogo2024PNG.png" class="w-[150px] h-[50px] ml-16">
+            <!-- <p class=" font-[700] ml-[30px] text-blue-700 text-4xl " style="text-shadow: 2px 2px pink;"></p> -->
+            <hr style="width: 260px; height: 2px; background-color: rgb(214, 203, 203); margin-top: 20px; margin-left: 13px;" class="md:w-[160px]" >
+            <a href=""> 
+                <div class="flex text-1xl font-[500] ml-[40px] mt-[20px] text-blue-700 hover:bg-gradient-to-r from-yellow-400 to-blue-700 hover:h-10 hover:w-[150px] hover:pt-2 hover:rounded-[25px] hover:text-white hover:px-8 "><ion-icon class="mt-1" name="car-outline"></ion-icon><p class="ml-1">Dashboard</p></div>
+            </a>
+            
+            <div onclick="btn1()" class="flex  cursor-pointer text-1xl font-[500] ml-[40px] mt-[15px] text-blue-700 hover:bg-gradient-to-r from-yellow-400 to-blue-700 hover:h-10 hover:w-[150px] hover:pt-2 hover:rounded-[25px] hover:text-white hover:px-8 "> <ion-icon class="mt-1" name="pie-chart-outline"></ion-icon><p class="ml-1" > Client</p>
+            </div>
+            <div class="text-1xl font-[500] ml-[50px] mt-[15px] text-blue-700  to-blue-700 "  >
+                <a href=""><p style="display:none;" id="client">Add Client</p></a>
+                <a href=""><p style="display:none ;" id="manage">Manage Client</p></a>
+                 </div>
+            
+            
+            <div onclick="btn2()" class="flex cursor-pointer text-1xl font-[500] ml-[40px] mt-[15px] text-blue-700 hover:bg-gradient-to-r from-yellow-400 to-blue-700 hover:h-10 w-[150px] hover:pt-2 hover:rounded-[25px] hover:text-white hover:px-8 "><ion-icon class="mt-1" name="bar-chart-outline"></ion-icon> <p class="ml-1">Order</p></div>
+            <div class="text-1xl font-[500] ml-[50px] mt-[15px] text-blue-700  to-blue-700 " >
+                <a href=""><p style="display:none;" id="create" >Create Order</p></a>
+                <a href=""><p style="display:none;" id="order" >Manage Order</p></a>
+                 </div>
+
+            
+            
+            
+                <div onclick="btn3()" class="flex cursor-pointer text-1xl  font-[500] ml-[40px] mt-[15px] text-blue-700 hover:bg-gradient-to-r from-yellow-400 to-blue-700 hover:h-10 w-[150px] hover:pt-2 hover:rounded-[25px] hover:text-white hover:px-8 "><ion-icon class="mt-1" name="copy-outline"></ion-icon> <p class="ml-1">Booking</p></div>
+                <div class="text-1xl font-[500] ml-[50px] mt-[15px] text-blue-700  to-blue-700 " >
+                    <a href=""><p style="display:none;" id="bookings">create Bookings</p></a>
+                    <a href=""><p style="display:none;" id="all">All Bookings</p></a>
+                     </div>
+    
+            
+            
+            <div onclick="btn4()" class="flex cursor-pointer text-1xl  font-[500] ml-[40px] mt-[15px] text-blue-700 hover:bg-gradient-to-r from-yellow-400 to-blue-700 hover:h-10 w-[150px] hover:pt-2 hover:rounded-[25px] hover:text-white hover:px-8 "><ion-icon class="mt-1" name="notifications-outline"></ion-icon><p class="ml-1"> Payment</p></div>
+            <div class="text-1xl font-[500] ml-[50px] mt-[15px] text-blue-700  to-blue-700 " >
+                <a href=""><p id="payment" style="display: none;">Total Payment History</p></a>
+                
+                 </div>
+                </div>
+                  <div class="">
+
+                  </div>
+             </div>
+
+
+</body>
+</html>
