@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="/tailwind2/tailwind.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body style="min-height: 1500px;">
+    <div class=" sm:w-[300px]m md:w-[700px] bg-gradient-to-r from-blue-800 to-white  border lg:w-[100%] h-[640px]   pt-[30px] ">
+        <div class=" md:w-[150px] sm:w-[260px] lg:w-[300px] h-[590px] bg-white  ml-4 rounded-[15px] pt-[30px] shadow">
+            <img src="images/ProprintersLogo2024PNG.png" class="w-[150px] h-[50px] ml-16">
+            <!-- <p class=" font-[700] ml-[30px] text-blue-700 text-4xl " style="text-shadow: 2px 2px pink;"></p> -->
+            <hr style="width: 260px; height: 2px; background-color: rgb(214, 203, 203); margin-top: 20px; margin-left: 13px;" class="md:w-[160px]" >
+            <a href=""> 
+                <div class="flex text-1xl font-[500] ml-[40px] mt-[20px] text-blue-700 hover:bg-gradient-to-r from-yellow-400 to-blue-700 hover:h-10 hover:w-[150px] hover:pt-2 hover:rounded-[25px] hover:text-white hover:px-8 "><ion-icon class="mt-1" name="car-outline"></ion-icon><p class="ml-1">Dashboard</p></div>
+            </a>
+            
+            <div  class="flex  cursor-pointer text-1xl font-[500] ml-[40px] mt-[15px] text-blue-700 hover:bg-gradient-to-r from-yellow-400 to-blue-700 hover:h-10 hover:w-[150px] hover:pt-2 hover:rounded-[25px] hover:text-white hover:px-8 "> <ion-icon class="mt-1" name="pie-chart-outline"></ion-icon><p class="ml-1" onclick="btn1()"> Client</p>
+            </div>
+            <div class="text-1xl font-[500] ml-[50px] mt-[15px] text-blue-700  to-blue-700 "  >
+                <a href=""><p class="hidden" id="client">Add Client</p></a>
+                <a href=""><p class="hidden" id="Manage">Manage Client</p></a>
+                 </div>
+            
+            
+            <div class="flex text-1xl font-[500] ml-[40px] mt-[15px] text-blue-700 hover:bg-gradient-to-r from-yellow-400 to-blue-700 hover:h-10 w-[150px] hover:pt-2 hover:rounded-[25px] hover:text-white hover:px-8 "><ion-icon class="mt-1" name="bar-chart-outline"></ion-icon> <p class="ml-1">Order</p></div>
+            <div class="text-1xl font-[500] ml-[50px] mt-[15px] text-blue-700  to-blue-700 " id="hidden">
+                <a href=""><p class=>Create Order</p></a>
+                <a href=""><p class="">Manage Order</p></a>
+                 </div>
+
+            
+            
+            
+                <div class="flex text-1xl  font-[500] ml-[40px] mt-[15px] text-blue-700 hover:bg-gradient-to-r from-yellow-400 to-blue-700 hover:h-10 w-[150px] hover:pt-2 hover:rounded-[25px] hover:text-white hover:px-8 "><ion-icon class="mt-1" name="copy-outline"></ion-icon> <p class="ml-1">Booking</p></div>
+                <div class="text-1xl font-[500] ml-[50px] mt-[15px] text-blue-700  to-blue-700 " id="hidden">
+                    <a href=""><p class=>create Bookings</p></a>
+                    <a href=""><p class="">All Bookings</p></a>
+                     </div>
+    
+            
+            
+            <div class="flex text-1xl  font-[500] ml-[40px] mt-[15px] text-blue-700 hover:bg-gradient-to-r from-yellow-400 to-blue-700 hover:h-10 w-[150px] hover:pt-2 hover:rounded-[25px] hover:text-white hover:px-8 "><ion-icon class="mt-1" name="notifications-outline"></ion-icon><p class="ml-1"> Payment</p></div>
+            <div class="text-1xl font-[500] ml-[50px] mt-[15px] text-blue-700  to-blue-700 " id="hidden">
+                <a href=""><p >Total Payment History</p></a>
+                
+                 </div>
+
+            
+                
+            
+        </div>
+        <div style="height: 60px; width: 1000px; background-color:white;" class=" sm:hidden md:block lg:block ml-[350px] mt-[-580px] rounded-[10px] shadow ">
+        <input class="bg-blue-800 text-blue-500 w-[200px] outline-none placeholder:text-yellow-400 h-[30px] mt-4 ml-4 pl-4 rounded-[20px] " type="search" placeholder="Search">
+        <ion-icon class="text-yellow-400 ml-[-40px] mt-4" name="search-outline"></ion-icon>
+            <input type="date" class="ml-28 border-white outline-none text-blue-800" >
+        <div class="bg-blue-800 w-[100px] h-[30px] ml-[870px] mt-[-25px] rounded-[20px]">
+            <ion-icon class=" text-[11px] text-blue-800 ml-10 mt-3" name="list-outline"></ion-icon>
+            <p class="text-[11px] text-white ml-14 pt-2 font-[500] mt-[-29px]"> List</p>
+        </div>
+        <div class="bg-yellow-400 w-[100px] h-[30px] ml-[800px] mt-[-30px] rounded-[20px]">
+            <ion-icon name="copy-outline" class="text-[11px] ml-6 mt-2"></ion-icon>
+            <p class="text-[11px] text-blue-800 ml-10 pt-2 font-[500] mt-[-28px]"> Card</p>
+        </div>
+        </div>
+        <div style="height: 280px; width: 1010px; background-color:white;" class=" sm:hidden md:hidden lg:block ml-[350px] mt-[20px] rounded-[10px] shadow">
+        <h1 class="text-2xl text-blue-800 ml-8 pt-4 font-[600]">Order</h1>
+        <p class="text-[11px] ml-8 mt-1 text-blue-800"><b class="text-3 ">117 total,</b> proceed to resolve them</p>
+        <h1 class="text-3xl text-blue-800 ml-[780px] mt-[-50px] font-[700]">94</h1>
+        <p class=" text-blue-800 ml-[780px] text-[11px]">Done</p>
+        <h1 class="text-3xl text-blue-800 ml-[900px] mt-[-50px] font-[700]">23</h1>
+        <p class=" text-blue-800 ml-[890px] text-[11px]">In progress</p>
+        <table class=" border-collapse   text-blue-800   text-[20px] ml-10 mt-4 ">
+               <tr >
+                    <th class="border " style="border-left: none; border-right: none; padding-right:110px;" >Name</th>
+                    <th  class="border"style="border-left: none; border-right: none; padding-right:11px ">Admin</th>
+                    <th class="border"style="border-left: none; border-right: none;">Member</th>
+                    <th class="border" style="border-left: none; border-right: none;">Status</th>
+                    <th class="border"style="border-left: none; border-right: none;">Run time</th>
+                    <th class="pl-4 border" style="border-left: none; border-right: none;">Finish date</th>
+                </tr>
+        
+                <tr>
+                    <td class=" pl-6 py-2 text-[15px]">Clientonbording</td>
+                    <td class="px-4 py-2 text-[15px]">Samanta j</td>
+                    <td class=" px-4 py-2 text-[15px]">3</td>
+                    <td class=" px-4 py-2 text-[15px]">In progress</td>
+                    <td class=" px-4 py-2 text-[15px]">6hours</td>
+                    <td class=" pl-4 py-2 text-[15px]">6 Mon</td>
+                </tr>
+                <tr>
+                    <td class=" pl-6 py-2 text-[15px] ">Meeting with webflow and notion</td>
+                    <td class=" px-4 py-2 text-[15px] ">Bob.P</td>
+                    <td class=" px-4 py-2 text-[15px] ">4</td>
+                    <td class=" px-4 py-2 text-[15px]">Done</td>
+                    <td class=" px-4 py-2 text-[15px] ">2hours</td>
+                    <td class=" pl-4 py-2 text-[15px] ">7 Tue</td>
+                </tr>
+                <tr>
+                    <td class=" pl-6 text-[15px]">First Handoff with engineers</td>
+                    <td class=" px-4 py-2 text-[15px]">Kate. O</td>
+                    <td class=" px-4 py-2 text-[15px]">10</td>
+                    <td class=" px-4 py-2 text-[15px]">In progress</td>
+                    <td class=" px-4 py-2 text-[15px]">3days</td>
+                    <td class=" pl-4 py-2 text-[15px]">10 Fri</td>
+                
+                </tr>
+                <tr>
+                    <td class=" pl-6 py-2 text-[15px]">Client Drafting (2) with Lawrence</td>
+                    <td class=" px-4 py-2 text-[15px]">Jack.F</td>
+                    <td class=" px-4 py-2 text-[15px]">7</td>
+                    <td class=" px-4 py-2 text-[15px]">In progress</td>
+                    <td class=" px-4 py-2 text-[15px]">1week</td>
+                    <td class=" pl-4 py-2 text-[15px]">19 Sun</td>
+                
+                </tr>
+        
+        </table>
+    </div>
+        <div class="sm:hidden md:hidden lg:block">
+            <div style="height: 200px; width: 490px; background-color:white;" class="ml-[350px] mt-[20px] rounded-[10px] shadow">
+            <p class="text-blue-800 pl-[20px] pt-[20px] text-2xl" >Bookings</p>
+            </div>
+            <div style="height: 200px; width: 490px; background-color:rgb(52, 52, 199);" class="ml-[856px] mt-[-200px] rounded-[10px] shadow  relaive">
+                <p class="text-white pl-[20px] pt-[20px] text-2xl" >Customer's Interaction</p>
+
+               </div>
+        </div>
+    </div>
+
+ <script>
+ function btn1(){
+    document.getElementById("client").style.display = "block";
+    document.getElementById("manage").style.display = "block";
+ }
+ </script>
+
+
+
+    </body>
+</html>

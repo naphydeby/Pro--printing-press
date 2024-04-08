@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ion-icon class="mt-1" name="bar-chart-outline" onclick="btn()"></ion-icon>
+    
+        <p id="a" class="hidden">Educational Background</p>
+        <p id="b" class="hidden">Experience</p>
+        <p id="c" class="hidden">skill</p>
+        <script>
+            function btn(){
+               let A = document.getElementById('a');
+               let B= document.getElementById('b');
+               let C = document.getElementById('c');
+
+                if(A.style.display === "hidden"){
+                A.style.display = "block";
+                }
+             else{
+                A.style.display = "hidden";
+             }
+
+             
+             if(B.style.display === "hidden"){
+                B.style.display = "block";
+                }
+             else{
+                B.style.display = "hidden";
+             }
+
+             
+             if(C.style.display === "hidden"){
+                C.style.display = "block";
+                }
+             else{
+                C.style.display = "hidden";
+             }
+                }
+        </script>
+
+</body>
+</html>
