@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Order</title>
+    <title>Create-Order</title>
     <script src="/tailwind2/tailwind.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
 </head>
 <body>
-    <div class=" sm:w-[300px]m md:w-[700px] bg-gradient-to-r from-blue-800 to-white  border lg:w-[100%] h-[640px]   pt-[30px] ">
-        <div class=" md:w-[150px] sm:w-[260px] lg:w-[300px] h-[590px] bg-white  ml-4 rounded-[15px] pt-[30px] shadow">
+    <div class=" flex  bg-gradient-to-r from-blue-800 to-white  border w-[100%] h-[640px]   pt-[30px] ">
+        <div class=" w-[300px] h-[590px] bg-white  ml-4 rounded-[15px] pt-[30px] shadow">
             <img src="images/ProprintersLogo2024PNG.png" class="w-[150px] h-[50px] ml-16">
-            <!-- <p class=" font-[700] ml-[30px] text-blue-700 text-4xl " style="text-shadow: 2px 2px pink;"></p> -->
+            
             <hr style="width: 260px; height: 2px; background-color: rgb(214, 203, 203); margin-top: 20px; margin-left: 13px;" class="md:w-[160px]" >
             <a href=""> 
                 <div class="flex text-1xl font-[500] ml-[40px] mt-[20px] text-blue-700 hover:bg-gradient-to-r from-yellow-400 to-blue-700 hover:h-10 hover:w-[150px] hover:pt-2 hover:rounded-[25px] hover:text-white hover:px-8 "><ion-icon class="mt-1" name="car-outline"></ion-icon><p class="ml-1">Dashboard</p></div>
@@ -47,14 +47,103 @@
             <div onclick="btn4()" class="flex cursor-pointer text-1xl  font-[500] ml-[40px] mt-[15px] text-blue-700 hover:bg-gradient-to-r from-yellow-400 to-blue-700 hover:h-10 w-[150px] hover:pt-2 hover:rounded-[25px] hover:text-white hover:px-8 "><ion-icon class="mt-1" name="notifications-outline"></ion-icon><p class="ml-1"> Payment</p></div>
             <div class="text-1xl font-[500] ml-[50px] mt-[15px] text-blue-700  to-blue-700 " >
                 <a href=""><p id="payment" style="display: none;">Total Payment History</p></a>
-                
-                 </div>
                 </div>
-                  <div class="">
+                </div>
+                  <div class="w-[70%] h-[590px] bg-white ml-6 rounded-[15px]">
+                    <h2 class="ml-[420px] mt-10 text-yellow-400 text-4xl">Order</h2>
+                    <form action="" id="reg">
+                    <input class=" text-[20px] shadow bg-blue-800 text-white w-[700px] outline-none placeholder:text-yellow-400 h-[60px] mt-[80px] ml-[120px] pl-10 rounded-[15px] " type="text" placeholder="Enter your name" id="name">
+                    <input class=" text-[20px] shadow bg-blue-800 text-white w-[700px] outline-none placeholder:text-yellow-400 h-[60px] mt-12 ml-[120px] pl-10 rounded-[15px] " type="text" placeholder="Place your order" id="place">
+                    
+                 <button  class=" text-[20px] shadow bg-blue-800 text-yellow-400 w-[300px] h-[60px] mt-24 ml-[300px] pl-8 rounded-[15px]" onclick="sub()">Submit</button>
+                </form>
+                </div>
+                </div>
 
-                  </div>
-             </div>
-
-
+                <script>
+                    function btn1(){
+                     let client=  document.getElementById("client");
+                      let manage = document.getElementById("manage");
+                      
+                      if(client.style.display === "none"){
+                       client.style.display = "block";
+                   }
+                    else{
+                       client.style.display = "none";
+                    }
+                   
+                    if(manage.style.display === "none"){
+                       manage.style.display = "block";
+                   }
+                    else{
+                       manage.style.display = "none";
+                    }
+                    }
+                   
+                    function btn2(){
+                     let create=  document.getElementById("create");
+                      let order = document.getElementById("order");
+                      
+                      if(create.style.display === "none"){
+                           create.style.display = "block";
+                   }
+                    else{
+                       create.style.display = "none";
+                    }
+                   
+                    if(order.style.display === "none"){
+                       order.style.display = "block";
+                   }
+                    else{
+                       order.style.display = "none";
+                    }
+                    }
+                   
+                    function btn3(){
+                     let bookings=  document.getElementById("bookings");
+                      let all = document.getElementById("all");
+                      
+                      if(bookings.style.display === "none"){
+                           bookings.style.display = "block";
+                   }
+                    else{
+                       bookings.style.display = "none";
+                    }
+                   
+                    if(all.style.display === "none"){
+                       all.style.display = "block";
+                   }
+                    else{
+                       all.style.display = "none";
+                    }
+                    }
+                   
+                    function btn4(){
+                     let payment=  document.getElementById("payment");
+                      
+                      
+                      if(payment.style.display === "none"){
+                           payment.style.display = "block";
+                   }
+                    else{
+                       payment.style.display = "none";
+                    }
+                    }
+                     
+                    function sub(){
+                        event.preventDefault()
+                        let name= document.getElementById("name").value;
+                        let place = document.getElementById("place"). value;
+                        if(!name || !place){
+                        alert("Field can not be empty");
+                        }
+                        else{
+                             document.getElementById("reg").submit(sub);
+                             alert("sucessful");
+                        }
+                    }
+                   
+                    </script>
+                   
 </body>
 </html>

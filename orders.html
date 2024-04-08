@@ -3,9 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>manage-Order</title>
+    <script src="/tailwind2/tailwind.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
 </head>
 <body>
+    <div class=" flex  bg-gradient-to-r from-blue-800 to-white  border w-[100%] h-[640px]   pt-[30px] ">
+        <div class=" w-[300px] h-[590px] bg-white  ml-4 rounded-[15px] pt-[30px] shadow">
+            <img src="images/ProprintersLogo2024PNG.png" class="w-[150px] h-[50px] ml-16">
+            
+            <hr style="width: 260px; height: 2px; background-color: rgb(214, 203, 203); margin-top: 20px; margin-left: 13px;" class="md:w-[160px]" >
+            <a href=""> 
+                <div class="flex text-1xl font-[500] ml-[40px] mt-[20px] text-blue-700 hover:bg-gradient-to-r from-yellow-400 to-blue-700 hover:h-10 hover:w-[150px] hover:pt-2 hover:rounded-[25px] hover:text-white hover:px-8 "><ion-icon class="mt-1" name="car-outline"></ion-icon><p class="ml-1">Dashboard</p></div>
+            </a>
+            
+            <div onclick="btn1()" class="flex  cursor-pointer text-1xl font-[500] ml-[40px] mt-[15px] text-blue-700 hover:bg-gradient-to-r from-yellow-400 to-blue-700 hover:h-10 hover:w-[150px] hover:pt-2 hover:rounded-[25px] hover:text-white hover:px-8 "> <ion-icon class="mt-1" name="pie-chart-outline"></ion-icon><p class="ml-1" > Client</p>
+            </div>
+            <div class="text-1xl font-[500] ml-[50px] mt-[15px] text-blue-700  to-blue-700 "  >
+                <a href=""><p style="display:none;" id="client">Add Client</p></a>
+                <a href=""><p style="display:none ;" id="manage">Manage Client</p></a>
+                 </div>
+            
+            
+            <div onclick="btn2()" class="flex cursor-pointer text-1xl font-[500] ml-[40px] mt-[15px] text-blue-700 hover:bg-gradient-to-r from-yellow-400 to-blue-700 hover:h-10 w-[150px] hover:pt-2 hover:rounded-[25px] hover:text-white hover:px-8 "><ion-icon class="mt-1" name="bar-chart-outline"></ion-icon> <p class="ml-1">Order</p></div>
+            <div class="text-1xl font-[500] ml-[50px] mt-[15px] text-blue-700  to-blue-700 " >
+                <a href=""><p style="display:none;" id="create" >Create Order</p></a>
+                <a href=""><p style="display:none;" id="order" >Manage Order</p></a>
+                 </div>
+
+            
+            
+            
+                <div onclick="btn3()" class="flex cursor-pointer text-1xl  font-[500] ml-[40px] mt-[15px] text-blue-700 hover:bg-gradient-to-r from-yellow-400 to-blue-700 hover:h-10 w-[150px] hover:pt-2 hover:rounded-[25px] hover:text-white hover:px-8 "><ion-icon class="mt-1" name="copy-outline"></ion-icon> <p class="ml-1">Booking</p></div>
+                <div class="text-1xl font-[500] ml-[50px] mt-[15px] text-blue-700  to-blue-700 " >
+                    <a href=""><p style="display:none;" id="bookings">create Bookings</p></a>
+                    <a href=""><p style="display:none;" id="all">All Bookings</p></a>
+                     </div>
     
+            
+            
+            <div onclick="btn4()" class="flex cursor-pointer text-1xl  font-[500] ml-[40px] mt-[15px] text-blue-700 hover:bg-gradient-to-r from-yellow-400 to-blue-700 hover:h-10 w-[150px] hover:pt-2 hover:rounded-[25px] hover:text-white hover:px-8 "><ion-icon class="mt-1" name="notifications-outline"></ion-icon><p class="ml-1"> Payment</p></div>
+            <div class="text-1xl font-[500] ml-[50px] mt-[15px] text-blue-700  to-blue-700 " >
+                <a href=""><p id="payment" style="display: none;">Total Payment History</p></a>
+                </div>
+                </div>
+                  <div class="w-[70%] h-[590px] bg-white ml-6 rounded-[15px]">
+                    <input class=" text-[20px] shadow bg-blue-800 text-white w-[700px] outline-none placeholder:text-yellow-400 h-[60px] mt-[80px] ml-[120px] pl-10 rounded-[15px] " type="text" placeholder="Search by order number" id="name">
+                    <ion-icon class="text-yellow-400 ml-[-40px] mt-4" name="search-outline"></ion-icon>
+                    <table class=" border-collapse   text-blue-800   text-[20px] ml-[100PX] mt-10 ">
+                        <tr >
+                             <th class="border " style="border-left: none; border-right: none; " >Order NO</th>
+                             <th  class="border"style="border-left: none; border-right: none;  "> Product</th>
+                             <th class="border"style="border-left: none; border-right: none;">Name</th>
+                             <th class="border" style="border-left: none; border-right: none;">Email</th>
+                             <th class="border"style="border-left: none; border-right: none;">Phone</th>
+                             <th class=" border" style="border-left: none; border-right: none;">Address</th>
+                         </tr>
+                 
+                         <tr>
+                             <td class=" pl-6 py-2 text-[15px]">001</td>
+                             <td class="px-4 py-2 text-[15px]">Banner</td>
+                             <td class=" px-4 py-2 text-[15px]">Folakemi Aliu</td>
+                             <td class=" px-4 py-2 text-[15px]">folly@gmail.com</td>
+                             <td class=" px-4 py-2 text-[15px]">08029768494</td>
+                             <td class=" pl-4 py-2 text-[15px]">6, Olafikun st. Odongunyan, Lagos.</td>
+                         </tr>
+                         <tr>
+                             <td class=" pl-6 py-2 text-[15px] ">002</td>
+                             <td class=" px-4 py-2 text-[15px] ">Hard cover</td>
+                             <td class=" px-4 py-2 text-[15px] ">Ayomide Farolagba</td>
+                             <td class=" px-4 py-2 text-[15px]">ayo123@yahoo.com</td>
+                             <td class=" px-4 py-2 text-[15px] ">07056872365</td>
+                             <td class=" pl-4 py-2 text-[15px] ">7, Ayofikun st.Ifako, Gbagada, Lagos</td>
+                         </tr>
+                         <tr>
+                             <td class=" pl-6 text-[15px]">003</td>
+                             <td class=" px-4 py-2 text-[15px]">T.Shirt</td>
+                             <td class=" px-4 py-2 text-[15px]">Folashade Alonge</td>
+                             <td class=" px-4 py-2 text-[15px]">follyf@gmail.com</td>
+                             <td class=" px-4 py-2 text-[15px]">07089452312</td>
+                             <td class=" pl-4 py-2 text-[15px]">10, Gbaga rd, Sabo, Ikorodu, Lagos</td>
+                         
+                         </tr>
+                         <tr>
+                             <td class=" pl-6 py-2 text-[15px]">004</td>
+                             <td class=" px-4 py-2 text-[15px]">Umbrella</td>
+                             <td class=" px-4 py-2 text-[15px]">Goodness</td>
+                             <td class=" px-4 py-2 text-[15px]">goodybag@gmail.com</td>
+                             <td class=" px-4 py-2 text-[15px]">08034568970</td>
+                             <td class=" pl-4 py-2 text-[15px]">126, Allen- Avenue, Ikeja, Lagos.</td>
+                         
+                         </tr>
+                 
+                 </table>
+                </div>
+                </div>
+
+                
+            
+                   
 </body>
 </html>
