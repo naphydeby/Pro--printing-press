@@ -18,34 +18,34 @@
                 <div class="flex text-1xl font-[500] ml-[40px] mt-[20px] text-blue-700 hover:bg-gradient-to-r from-yellow-400 to-blue-700 hover:h-10 hover:w-[150px] hover:pt-2 hover:rounded-[25px] hover:text-white hover:px-8 "><ion-icon class="mt-1" name="car-outline"></ion-icon><p class="ml-1">Dashboard</p></div>
             </a>
             
-            <div  class="flex  cursor-pointer text-1xl font-[500] ml-[40px] mt-[15px] text-blue-700 hover:bg-gradient-to-r from-yellow-400 to-blue-700 hover:h-10 hover:w-[150px] hover:pt-2 hover:rounded-[25px] hover:text-white hover:px-8 "> <ion-icon class="mt-1" name="pie-chart-outline"></ion-icon><p class="ml-1" onclick="btn1()"> Client</p>
+            <div onclick="btn1()" class="flex  cursor-pointer text-1xl font-[500] ml-[40px] mt-[15px] text-blue-700 hover:bg-gradient-to-r from-yellow-400 to-blue-700 hover:h-10 hover:w-[150px] hover:pt-2 hover:rounded-[25px] hover:text-white hover:px-8 "> <ion-icon class="mt-1" name="pie-chart-outline"></ion-icon><p class="ml-1" > Client</p>
             </div>
             <div class="text-1xl font-[500] ml-[50px] mt-[15px] text-blue-700  to-blue-700 "  >
-                <a href=""><p class="hidden" id="client">Add Client</p></a>
-                <a href=""><p class="hidden" id="Manage">Manage Client</p></a>
+                <a href=""><p style="display:none;" id="client">Add Client</p></a>
+                <a href=""><p style="display:none ;" id="manage">Manage Client</p></a>
                  </div>
             
             
-            <div class="flex text-1xl font-[500] ml-[40px] mt-[15px] text-blue-700 hover:bg-gradient-to-r from-yellow-400 to-blue-700 hover:h-10 w-[150px] hover:pt-2 hover:rounded-[25px] hover:text-white hover:px-8 "><ion-icon class="mt-1" name="bar-chart-outline"></ion-icon> <p class="ml-1">Order</p></div>
-            <div class="text-1xl font-[500] ml-[50px] mt-[15px] text-blue-700  to-blue-700 " id="hidden">
-                <a href=""><p class=>Create Order</p></a>
-                <a href=""><p class="">Manage Order</p></a>
+            <div onclick="btn2()" class="flex cursor-pointer text-1xl font-[500] ml-[40px] mt-[15px] text-blue-700 hover:bg-gradient-to-r from-yellow-400 to-blue-700 hover:h-10 w-[150px] hover:pt-2 hover:rounded-[25px] hover:text-white hover:px-8 "><ion-icon class="mt-1" name="bar-chart-outline"></ion-icon> <p class="ml-1">Order</p></div>
+            <div class="text-1xl font-[500] ml-[50px] mt-[15px] text-blue-700  to-blue-700 " >
+                <a href=""><p style="display:none;" id="create" >Create Order</p></a>
+                <a href=""><p style="display:none;" id="order" >Manage Order</p></a>
                  </div>
 
             
             
             
-                <div class="flex text-1xl  font-[500] ml-[40px] mt-[15px] text-blue-700 hover:bg-gradient-to-r from-yellow-400 to-blue-700 hover:h-10 w-[150px] hover:pt-2 hover:rounded-[25px] hover:text-white hover:px-8 "><ion-icon class="mt-1" name="copy-outline"></ion-icon> <p class="ml-1">Booking</p></div>
-                <div class="text-1xl font-[500] ml-[50px] mt-[15px] text-blue-700  to-blue-700 " id="hidden">
-                    <a href=""><p class=>create Bookings</p></a>
-                    <a href=""><p class="">All Bookings</p></a>
+                <div onclick="btn3()" class="flex cursor-pointer text-1xl  font-[500] ml-[40px] mt-[15px] text-blue-700 hover:bg-gradient-to-r from-yellow-400 to-blue-700 hover:h-10 w-[150px] hover:pt-2 hover:rounded-[25px] hover:text-white hover:px-8 "><ion-icon class="mt-1" name="copy-outline"></ion-icon> <p class="ml-1">Booking</p></div>
+                <div class="text-1xl font-[500] ml-[50px] mt-[15px] text-blue-700  to-blue-700 " >
+                    <a href=""><p style="display:none;" id="bookings">create Bookings</p></a>
+                    <a href=""><p style="display:none;" id="all">All Bookings</p></a>
                      </div>
     
             
             
-            <div class="flex text-1xl  font-[500] ml-[40px] mt-[15px] text-blue-700 hover:bg-gradient-to-r from-yellow-400 to-blue-700 hover:h-10 w-[150px] hover:pt-2 hover:rounded-[25px] hover:text-white hover:px-8 "><ion-icon class="mt-1" name="notifications-outline"></ion-icon><p class="ml-1"> Payment</p></div>
-            <div class="text-1xl font-[500] ml-[50px] mt-[15px] text-blue-700  to-blue-700 " id="hidden">
-                <a href=""><p >Total Payment History</p></a>
+            <div onclick="btn4()" class="flex cursor-pointer text-1xl  font-[500] ml-[40px] mt-[15px] text-blue-700 hover:bg-gradient-to-r from-yellow-400 to-blue-700 hover:h-10 w-[150px] hover:pt-2 hover:rounded-[25px] hover:text-white hover:px-8 "><ion-icon class="mt-1" name="notifications-outline"></ion-icon><p class="ml-1"> Payment</p></div>
+            <div class="text-1xl font-[500] ml-[50px] mt-[15px] text-blue-700  to-blue-700 " >
+                <a href=""><p id="payment" style="display: none;">Total Payment History</p></a>
                 
                  </div>
 
@@ -133,9 +133,75 @@
 
  <script>
  function btn1(){
-    document.getElementById("client").style.display = "block";
-    document.getElementById("manage").style.display = "block";
+  let client=  document.getElementById("client");
+   let manage = document.getElementById("manage");
+   
+   if(client.style.display === "none"){
+    client.style.display = "block";
+}
+ else{
+    client.style.display = "none";
  }
+
+ if(manage.style.display === "none"){
+    manage.style.display = "block";
+}
+ else{
+    manage.style.display = "none";
+ }
+ }
+
+ function btn2(){
+  let create=  document.getElementById("create");
+   let order = document.getElementById("order");
+   
+   if(create.style.display === "none"){
+        create.style.display = "block";
+}
+ else{
+    create.style.display = "none";
+ }
+
+ if(order.style.display === "none"){
+    order.style.display = "block";
+}
+ else{
+    order.style.display = "none";
+ }
+ }
+
+ function btn3(){
+  let bookings=  document.getElementById("bookings");
+   let all = document.getElementById("all");
+   
+   if(bookings.style.display === "none"){
+        bookings.style.display = "block";
+}
+ else{
+    bookings.style.display = "none";
+ }
+
+ if(all.style.display === "none"){
+    all.style.display = "block";
+}
+ else{
+    all.style.display = "none";
+ }
+ }
+
+ function btn4(){
+  let payment=  document.getElementById("payment");
+   
+   
+   if(payment.style.display === "none"){
+        payment.style.display = "block";
+}
+ else{
+    payment.style.display = "none";
+ }
+ }
+
+
  </script>
 
 
