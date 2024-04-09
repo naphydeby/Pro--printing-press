@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>manage-Order</title>
+    <script src="/tailwind2/tailwind.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</head>
+<body>
+    <div class=" flex  bg-gradient-to-r from-blue-800 to-white  border w-[100%] h-[640px]   pt-[30px] ">
+        <div class=" w-[300px] h-[590px] bg-white  ml-4 rounded-[15px] pt-[30px] shadow">
+            <img src="images/ProprintersLogo2024PNG.png" class="w-[150px] h-[50px] ml-16">
+            
+            <hr style="width: 260px; height: 2px; background-color: rgb(214, 203, 203); margin-top: 20px; margin-left: 13px;" class="md:w-[160px]" >
+            <a href=""> 
+                <div class="flex text-1xl font-[500] ml-[40px] mt-[20px] text-blue-700 hover:bg-gradient-to-r from-yellow-400 to-blue-700 hover:h-10 hover:w-[150px] hover:pt-2 hover:rounded-[25px] hover:text-white hover:px-8 "><ion-icon class="mt-1" name="car-outline"></ion-icon><p class="ml-1">Dashboard</p></div>
+            </a>
+            
+            <div onclick="btn1()" class="flex  cursor-pointer text-1xl font-[500] ml-[40px] mt-[15px] text-blue-700 hover:bg-gradient-to-r from-yellow-400 to-blue-700 hover:h-10 hover:w-[150px] hover:pt-2 hover:rounded-[25px] hover:text-white hover:px-8 "> <ion-icon class="mt-1" name="pie-chart-outline"></ion-icon><p class="ml-1" > Client</p>
+            </div>
+            <div class="text-1xl font-[500] ml-[50px] mt-[15px] text-blue-700  to-blue-700 "  >
+                <a href=""><p style="display:none;" id="client">Add Client</p></a>
+                <a href=""><p style="display:none ;" id="manage">Manage Client</p></a>
+                 </div>
+            
+            
+            <div onclick="btn2()" class="flex cursor-pointer text-1xl font-[500] ml-[40px] mt-[15px] text-blue-700 hover:bg-gradient-to-r from-yellow-400 to-blue-700 hover:h-10 w-[150px] hover:pt-2 hover:rounded-[25px] hover:text-white hover:px-8 "><ion-icon class="mt-1" name="bar-chart-outline"></ion-icon> <p class="ml-1">Order</p></div>
+            <div class="text-1xl font-[500] ml-[50px] mt-[15px] text-blue-700  to-blue-700 " >
+                <a href="order.html"><p style="display:none;" id="create" >Create Order</p></a>
+                <a href="manageorders.html"><p style="display:none;" id="order" >Manage Order</p></a>
+                 </div>
+
+            
+            
+            
+                <div onclick="btn3()" class="flex cursor-pointer text-1xl  font-[500] ml-[40px] mt-[15px] text-blue-700 hover:bg-gradient-to-r from-yellow-400 to-blue-700 hover:h-10 w-[150px] hover:pt-2 hover:rounded-[25px] hover:text-white hover:px-8 "><ion-icon class="mt-1" name="copy-outline"></ion-icon> <p class="ml-1">Booking</p></div>
+                <div class="text-1xl font-[500] ml-[50px] mt-[15px] text-blue-700  to-blue-700 " >
+                    <a href=""><p style="display:none;" id="bookings">create Bookings</p></a>
+                    <a href=""><p style="display:none;" id="all">All Bookings</p></a>
+                     </div>
+    
+            
+            
+            <div onclick="btn4()" class="flex cursor-pointer text-1xl  font-[500] ml-[40px] mt-[15px] text-blue-700 hover:bg-gradient-to-r from-yellow-400 to-blue-700 hover:h-10 w-[150px] hover:pt-2 hover:rounded-[25px] hover:text-white hover:px-8 "><ion-icon class="mt-1" name="notifications-outline"></ion-icon><p class="ml-1"> Payment</p></div>
+            <div class="text-1xl font-[500] ml-[50px] mt-[15px] text-blue-700  to-blue-700 " >
+                <a href="payment.html"><p id="payment" style="display: none;">Total Payment History</p></a>
+                </div>
+                </div>
+                  <div class="w-[70%] h-[590px] bg-white ml-6 rounded-[15px]">
+                    <input class=" text-[20px] shadow bg-blue-800 text-white w-[700px] outline-none placeholder:text-yellow-400 h-[60px] mt-[80px] ml-[120px] pl-10 rounded-[15px] " type="text" placeholder="Search by Client Name" id="name">
+                    <ion-icon class="text-yellow-400 ml-[-40px] mt-4" name="search-outline"></ion-icon>
+                    <table class=" border-collapse   text-blue-800 py-4  text-[20px] ml-4 mt-10 ">
+                        <tr >
+                             <th class="border " style="border-left: none; border-right: none; " >Client Name</th>
+                             <th  class="border"style="border-left: none; border-right: none;  "> Business Name</th>
+                             <th class="border"style="border-left: none; border-right: none;">Business Address</th>
+                             <th class="border" style="border-left: none; border-right: none;">Order Date</th>
+                             <th class="border"style="border-left: none; border-right: none;">Unit</th>
+                             <th class=" border" style="border-left: none; border-right: none;">size</th>
+                         </tr>
+                 
+                         <tr>
+                             <td class=" pl-6 py-4 text-[15px]">Folakemi Aliu</td>
+                             <td class="px-4 py-4 text-[15px]">Folly Enterprise, Limited</td>
+                             <td class=" px-4 py-4 text-[15px]">3, Ayoku str. Surulere,Lagos</td>
+                             <td class=" px-4 py-4 text-[15px]">6th Feb,2024</td>
+                             <td class=" px-4 py-4 text-[15px]">Banner</td>
+                             <td class=" pl-4 py-4 text-[15px]">Large</td>
+                         </tr>
+                         <tr>
+                             <td class=" pl-6 py-4 text-[15px] ">Ayomide Farolagba</td>
+                             <td class=" px-4 py-4 text-[15px] ">A.Y Nig.Limited</td>
+                             <td class=" px-4 py-4 text-[15px] ">7, Ayofikun st.Ifako, Gbagada, Lagos</td>
+                             <td class=" px-4 py-4 text-[15px]">8th,Mar,2024</td>
+                             <td class=" px-4 py-4 text-[15px] ">Hard cover</td>
+                             <td class=" pl-4 py-4 text-[15px] ">Medium</td>
+                         </tr>
+                         <tr>
+                             <td class=" pl-6  py-4 text-[15px]">Folashade Alonge</td>
+                             <td class=" px-4 py-4 text-[15px]">St.Morris Int.Sch,Lagos</td>
+                             <td class=" px-4 py-4 text-[15px]">10, Gbaga rd, Sabo, Ikorodu, Lagos</td>
+                             <td class=" px-4 py-4 text-[15px]">12th,Nov,2023</td>
+                             <td class=" px-4 py-4 text-[15px]">T.Shirt</td>
+                             <td class=" pl-4 py-4 text-[15px]">Small</td>
+                         
+                         </tr>
+                         <tr>
+                             <td class=" pl-6 py-4 text-[15px]">Goodness Adebayo</td>
+                             <td class=" px-4 py-4 text-[15px]">Goodybag Holdings</td>
+                             <td class=" px-4 py-4 text-[15px]">126, Allen- Avenue, Ikeja, Lagos.</td>
+                             <td class=" px-4 py-4 text-[15px]">24th Dec,2022</td>
+                             <td class=" px-4 py-4 text-[15px]">Umbrella</td>
+                             <td class=" pl-4 py-4 text-[15px]"> Medium</td>
+                         
+                         </tr>
+                 
+                 </table>
+                </div>
+                </div>
+
+                <script>
+                    function btn1(){
+                     let client=  document.getElementById("client");
+                      let manage = document.getElementById("manage");
+                      
+                      if(client.style.display === "none"){
+                       client.style.display = "block";
+                   }
+                    else{
+                       client.style.display = "none";
+                    }
+                   
+                    if(manage.style.display === "none"){
+                       manage.style.display = "block";
+                   }
+                    else{
+                       manage.style.display = "none";
+                    }
+                    }
+                   
+                    function btn2(){
+                     let create=  document.getElementById("create");
+                      let order = document.getElementById("order");
+                      
+                      if(create.style.display === "none"){
+                           create.style.display = "block";
+                   }
+                    else{
+                       create.style.display = "none";
+                    }
+                   
+                    if(order.style.display === "none"){
+                       order.style.display = "block";
+                   }
+                    else{
+                       order.style.display = "none";
+                    }
+                    }
+                   
+                    function btn3(){
+                     let bookings=  document.getElementById("bookings");
+                      let all = document.getElementById("all");
+                      
+                      if(bookings.style.display === "none"){
+                           bookings.style.display = "block";
+                   }
+                    else{
+                       bookings.style.display = "none";
+                    }
+                   
+                    if(all.style.display === "none"){
+                       all.style.display = "block";
+                   }
+                    else{
+                       all.style.display = "none";
+                    }
+                    }
+                   
+                    function btn4(){
+                     let payment=  document.getElementById("payment");
+                      
+                      
+                      if(payment.style.display === "none"){
+                           payment.style.display = "block";
+                   }
+                    else{
+                       payment.style.display = "none";
+                    }
+                    }
+                   
+                   
+                    </script>
+                   
+                    
+            
+                   
+</body>
+</html>
