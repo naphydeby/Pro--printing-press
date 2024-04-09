@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Create-Order</title>
+    <title>payment-history</title>
     <script src="/tailwind2/tailwind.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
@@ -50,13 +50,54 @@
                 </div>
                 </div>
                   <div class="w-[70%] h-[590px] bg-white ml-6 rounded-[15px]">
-                    <h2 class="ml-[420px] mt-10 text-yellow-400 text-4xl">Order</h2>
-                    <form action="" id="reg">
-                    <input class=" text-[20px] shadow bg-blue-800 text-white w-[700px] outline-none placeholder:text-yellow-400 h-[60px] mt-[80px] ml-[120px] pl-10 rounded-[15px] " type="text" placeholder="Enter your name" id="name">
-                    <input class=" text-[20px] shadow bg-blue-800 text-white w-[700px] outline-none placeholder:text-yellow-400 h-[60px] mt-12 ml-[120px] pl-10 rounded-[15px] " type="text" placeholder="Place your order" id="place">
-                    
-                 <button  class=" text-[20px] shadow bg-blue-800 text-yellow-400 w-[300px] h-[60px] mt-24 ml-[300px] pl-8 rounded-[15px]" onclick="sub()">Submit</button>
-                </form>
+                    <input class=" text-[20px] shadow bg-blue-800 text-white w-[700px] outline-none placeholder:text-yellow-400 h-[60px] mt-[80px] ml-[120px] pl-10 rounded-[15px] " type="text" placeholder="Search by name" id="name">
+                    <ion-icon class="text-yellow-400 ml-[-40px] mt-4" name="search-outline"></ion-icon>
+                    <table class=" border-collapse   text-blue-800   text-[20px] ml-[100PX] mt-10 ">
+                        <tr >
+                             <th class="border " style="border-left: none; border-right: none; " >Name</th>
+                             <th  class="border"style="border-left: none; border-right: none;  "> Email</th>
+                             <th class="border"style="border-left: none; border-right: none;">Phone</th>
+                             <th class="border" style="border-left: none; border-right: none;">Address</th>
+                             <th class="border"style="border-left: none; border-right: none;">Payment History</th>
+                             
+                         </tr>
+                 
+                         <tr>
+                             <td class=" pl-6 py-2 text-[15px]">Folakemi Aliu</td>
+                             <td class="px-4 py-2 text-[15px]">folly@gmail.com</td>
+                             <td class=" px-4 py-2 text-[15px]">08029768494</td>
+                             <td class=" px-4 py-2 text-[15px]">6, Olafikun st. Odongunyan, Lagos.</td>
+                             <td class=" px-4 py-2 text-[15px]">Add Payment History</td>
+                             
+                         </tr>
+                         <tr>
+                             <td class=" pl-6 py-2 text-[15px] ">Ayomide Farolagba</td>
+                             <td class=" px-4 py-2 text-[15px] ">ayo123@yahoo.com</td>
+                             <td class=" px-4 py-2 text-[15px] ">07056872365</td>
+                             <td class=" px-4 py-2 text-[15px]">7, Ayofikun st.Ifako, Gbagada, Lagos</td>
+                             <td class=" px-4 py-2 text-[15px] ">Add Payment History</td>
+                             
+                         </tr>
+                         <tr>
+                             <td class=" pl-6 text-[15px]">Folashade Alonge</td>
+                             <td class=" px-4 py-2 text-[15px]">follyf@gmail.com</td>
+                             <td class=" px-4 py-2 text-[15px]">07089452312</td>
+                             <td class=" px-4 py-2 text-[15px]">10, Gbaga rd, Sabo, Ikorodu, Lagos</td>
+                             <td class=" px-4 py-2 text-[15px]">Add Payment History</td>
+                             
+                         
+                         </tr>
+                         <tr>
+                             <td class=" pl-6 py-2 text-[15px]">Goodness Adebayo</td>
+                             <td class=" px-4 py-2 text-[15px]">goodybag@gmail.com</td>
+                             <td class=" px-4 py-2 text-[15px]">08034568970</td>
+                             <td class=" px-4 py-2 text-[15px]">126, Allen- Avenue, Ikeja, Lagos.</td>
+                             <td class=" px-4 py-2 text-[15px]">Add Payment History</td>
+                             
+                         
+                         </tr>
+                 
+                 </table>
                 </div>
                 </div>
 
@@ -129,21 +170,12 @@
                        payment.style.display = "none";
                     }
                     }
-                     
-                    function sub(){
-                        event.preventDefault()
-                        let name= document.getElementById("name").value;
-                        let place = document.getElementById("place"). value;
-                        if(!name || !place){
-                        alert("Field can not be empty");
-                        }
-                        else{
-                             document.getElementById("reg").submit(sub);
-                             alert("sucessful");
-                        }
-                    }
+                   
                    
                     </script>
+                   
+                    
+            
                    
 </body>
 </html>
