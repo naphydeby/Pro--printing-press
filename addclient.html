@@ -3,19 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
+    <title>Add Client</title>
     <script src="/tailwind2/tailwind.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
 <body style="height: 100vh;">
-    <div class=" sm:w-[300px]m md:w-[700px] bg-gradient-to-r from-blue-800 to-white  border lg:w-[100%] h-[100vh]   pt-[40px]  pl-20">
+    <div class="flex sm:w-[300px]m md:w-[700px] bg-gradient-to-r from-blue-800 to-white  border lg:w-[100%] h-[100vh]   pt-[40px]  pl-20">
         <div class=" md:w-[150px] sm:w-[260px] lg:w-[300px] h-[700px] bg-white  ml-4 rounded-[15px] pt-[30px] shadow">
             <img src="images/ProprintersLogo2024PNG.png" class="w-[150px] h-[50px] ml-16">
             <!-- <p class=" font-[700] ml-[30px] text-blue-700 text-4xl " style="text-shadow: 2px 2px pink;"></p> -->
             <hr style="width: 260px; height: 2px; background-color: rgb(214, 203, 203); margin-top: 20px; margin-left: 13px;" class="md:w-[160px]" >
-            <a href=""> 
-                <div class="flex text-1xl font-[500] ml-[40px] mt-[20px] text-blue-700 hover:bg-gradient-to-r from-yellow-400 to-blue-700 hover:h-10 hover:w-[150px] hover:pt-2 hover:rounded-[25px] hover:text-white hover:px-4 pb-2"><ion-icon class="mt-1" name="car-outline"></ion-icon><p class="ml-1">Dashboard</p></div>
+            <a href="dashboard.html"> 
+                <div class="flex text-1xl font-[500] ml-[40px] mt-[20px] text-blue-700 hover:bg-gradient-to-r from-yellow-400 to-blue-700 hover:h-10 hover:w-[150px] hover:pt-2 pb-2 hover:rounded-[25px] hover:text-white hover:px-4 "><ion-icon class="mt-1" name="car-outline"></ion-icon><p class="ml-1">Dashboard</p></div>
             </a>
             
             <div onclick="btn1()" class="flex  cursor-pointer text-1xl font-[500] ml-[40px] mt-[15px] text-blue-700 hover:bg-gradient-to-r from-yellow-400 to-blue-700 hover:h-10 hover:w-[150px] hover:pt-2 hover:rounded-[25px] hover:text-white hover:px-8 "> <ion-icon class="mt-1" name="pie-chart-outline"></ion-icon><p class="ml-1" > Client</p>
@@ -49,82 +49,25 @@
                 
             
         </div>
-        <div style="height: 60px; width: 1010px; background-color:white;" class=" sm:hidden md:block lg:block ml-[350px] mt-[-697px] rounded-[10px] shadow ">
-        <input class="bg-blue-800 w-[200px] outline-none text-yellow-400 placeholder:text-yellow-400 h-[35px] mt-[13px] ml-4 pl-4 rounded-[20px] " type="search" placeholder="Search">
-        <ion-icon class="text-yellow-400 ml-[-40px] mt-4" name="search-outline"></ion-icon>
-            <input type="date" class="ml-28 border-white outline-none text-blue-800" >
-        <div class="bg-blue-800 w-[100px] h-[35px] ml-[870px] mt-[-35px] rounded-[20px]">
-            <ion-icon class=" text-[11px] text-blue-800 ml-10 mt-3" name="list-outline"></ion-icon>
-            <p class="text-[11px] text-white ml-14 pt-2 font-[500] mt-[-29px]"> List</p>
-        </div>
-        <div class="bg-yellow-400 w-[100px] h-[35px] ml-[800px] mt-[-35px] rounded-[20px] pt-1">
-            <ion-icon name="copy-outline" class="text-[11px] ml-6 mt-2"></ion-icon>
-            <p class="text-[11px] text-blue-800 ml-10 pt-2 font-[500] mt-[-28px]"> Card</p>
-        </div>
-        </div>
-        <div style="height: 360px; width: 1010px; background-color:white;" class=" sm:hidden md:hidden lg:block ml-[350px] mt-[20px] rounded-[10px] shadow">
-        <h1 class="text-2xl text-blue-800 ml-8 pt-4 font-[600]">Order</h1>
-        <p class="text-[11px] ml-8 mt-1 text-blue-800"><b class="text-3 ">117 total,</b> proceed to resolve them</p>
-        <h1 class="text-3xl text-blue-800 ml-[780px] mt-[-50px] font-[700]">94</h1>
-        <p class=" text-blue-800 ml-[780px] text-[11px]">Done</p>
-        <h1 class="text-3xl text-blue-800 ml-[900px] mt-[-50px] font-[700]">23</h1>
-        <p class=" text-blue-800 ml-[890px] text-[11px]">In progress</p>
-        <table class=" border-collapse  text-blue-800   text-[20px] ml-12 mt-4 ">
-               <tr class="">
-                    <th class="border pr-20" style="border-left: none; border-right: none; " >Name</th>
-                    <th  class="border px-6"style="border-left: none; border-right: none; ">Admin</th>
-                    <th class="border px-6"style="border-left: none; border-right: none;">Member</th>
-                    <th class="border px-6" style="border-left: none; border-right: none;">Status</th>
-                    <th class="border px-6"style="border-left: none; border-right: none;">Run time</th>
-                    <th class="pl-8 border" style="border-left: none; border-right: none;">Finish date</th>
-                </tr>
         
-                <tr>
-                    <td class=" pl-6 py-2 text-[15px]">Clientonbording</td>
-                    <td class="px-4 py-2 text-[15px]">Samanta j</td>
-                    <td class=" px-4 py-2 text-center text-[15px]">3</td>
-                    <td class=" px-4 py-2 text-[15px]">In progress</td>
-                    <td class=" px-4 py-2 text-center text-[15px]">6hours</td>
-                    <td class=" pl-4 py-2 text-center text-[15px]">6 Mon</td>
-                </tr>
-                <tr>
-                    <td class=" pl-6 py-2 text-[15px] ">Meeting with webflow and notion</td>
-                    <td class=" px-4 py-2 text-[15px] ">Bob.P</td>
-                    <td class=" px-4 py-2 text-center text-[15px] ">4</td>
-                    <td class=" px-4 py-2 text-[15px]">Done</td>
-                    <td class=" px-4 py-2 text-center text-[15px] ">2hours</td>
-                    <td class=" pl-2 py-2 text-center text-[15px] ">7 Tue</td>
-                </tr>
-                <tr>
-                    <td class=" pl-6 text-[15px]">First Handoff with engineers</td>
-                    <td class=" px-4 py-2 text-[15px]">Kate. O</td>
-                    <td class=" px-4 py-2 text-center text-[15px]">10</td>
-                    <td class=" px-4 py-2 text-[15px]">In progress</td>
-                    <td class="py-2 pl-[43px] text-[15px]">3days</td>
-                    <td class=" pl-1 py-2 text-center text-[15px]">10 Fri</td>
-                
-                </tr>
-                <tr>
-                    <td class=" pl-6 py-2 text-[15px]">Client Drafting (2) with Lawrence</td>
-                    <td class=" px-4 py-2 text-[15px]">Jack.F</td>
-                    <td class=" px-4 py-2 text-center text-[15px]">7</td>
-                    <td class=" px-4 py-2 text-[15px]">In progress</td>
-                    <td class=" pl-[43px] py-2 text-[15px]">1week</td>
-                    <td class=" pl-4 py-2 text-center text-[15px]">19 Sun</td>
-                
-                </tr>
-        
-        </table>
-    </div>
-        <div class="sm:hidden md:hidden lg:block">
-            <div style="height: 239px; width: 490px; background-color:white;" class="ml-[350px] mt-[20px] rounded-[10px] shadow">
-            <p class="text-blue-800 pl-[20px] pt-[20px] text-2xl" >Bookings</p>
-            </div>
-            <div style="height: 239px; width: 506px; background-color:rgb(52, 52, 199);" class="ml-[856px] mt-[-240px] rounded-[10px] shadow  relaive">
-                <p class="text-white pl-[20px] pt-[20px] text-2xl" >Customer's Interaction</p>
+        <div class="w-[1030px] h-[700px] bg-white  ml-4 rounded-[15px] pt-[30px] shadow">
+            <div class="mt-8">
+                <h1 class="text-4xl font-[700] text-center text-yellow-400 ">Add Client</h1><br><br>
+                <p class="italic text-center mt-4 font-[500]"> Your #1 most reliable print partner </p>
+                <form action="" class="ml-[220px] mt-8">
+                    <input type="text" class="w-[300px] h-[50px] border-2 border-yellow-400 outline-none cursor-pointer placeholder-black font-[400] placeholder:font-[300] text-lg hover:shadow-2xl pl-6 rounded-md mr-4" placeholder="Customer name" required>
+                    <input type="text" class="w-[300px] h-[50px] border-2 border-yellow-400 outline-none cursor-pointer placeholder-black font-[400] placeholder:font-[300] text-lg hover:shadow-2xl pl-6 rounded-md" placeholder="Business Name" required><br><br>
+                    <input type="text" class="w-[620px] h-[50px] border-2 border-yellow-400 outline-none cursor-pointer placeholder-black font-[400] placeholder:font-[300] text-lg hover:shadow-2xl pl-6 rounded-md" placeholder="Business Address" required ><br><br>
+                    <input type="email" class="w-[300px] h-[50px] border-2 border-yellow-400 outline-none cursor-pointer placeholder-black font-[400] placeholder:font-[300] text-lg hover:shadow-2xl pl-6 rounded-md mr-4" placeholder="Email Address" >
+                    <input type="text" class="w-[300px] h-[50px] border-2 border-yellow-400 outline-none cursor-pointer placeholder-black font-[400] placeholder:font-[300] text-lg hover:shadow-2xl pl-6 rounded-md" placeholder="Phone Number" ><br><br><br><br>
 
-               </div>
+                    <button class="ml-[240px] w-[150px] h-[50px] shadow-xl border-2 border-grey text-center bg-gradient-to-r from-yellow-400 to-blue-700 hover:text-white rounded-md font-[500]">Submit</button>
+
+                </form>
+            </div>
         </div>
+
+
     </div>
 
  <script>
