@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Order</title>
+    <script src="/tailwind2/tailwind.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body style="height: 100vh;">
+    <div class="flex sm:w-[300px]m md:w-[700px] bg-gradient-to-r from-blue-800 to-white  border lg:w-[100%] h-[100vh]   pt-[40px]  pl-20">
+        <div class=" md:w-[150px] sm:w-[260px] lg:w-[300px] h-[700px] bg-white  ml-4 rounded-[15px] pt-[30px] shadow">
+            <img src="images/ProprintersLogo2024PNG.png" class="w-[150px] h-[50px] ml-16">
+            <!-- <p class=" font-[700] ml-[30px] text-blue-700 text-4xl " style="text-shadow: 2px 2px pink;"></p> -->
+            <hr style="width: 260px; height: 2px; background-color: rgb(214, 203, 203); margin-top: 20px; margin-left: 13px;" class="md:w-[160px]" >
+
+            <a href="clientdashboard.html"> 
+                <div class="flex text-1xl font-[500] ml-[40px] mt-[20px] text-blue-700 hover:bg-gradient-to-r from-yellow-400 to-blue-700 hover:h-10 hover:w-[150px] hover:pt-2 hover:rounded-[25px] hover:text-white pb-2 hover:px-4 "><ion-icon class="mt-1" name="car-outline"></ion-icon><p class="ml-1">Dashboard</p></div>
+            </a>
+
+            <a href="vieworder.html"> 
+                <div class="flex text-1xl font-[500] ml-[40px] mt-[20px] text-blue-700 hover:bg-gradient-to-r from-yellow-400 to-blue-700 hover:h-10 hover:w-[150px] hover:pt-2 hover:rounded-[25px] hover:text-white pb-2 hover:px-4 "><ion-icon class="mt-1" name="copy-outline"></ion-icon><p class="ml-1">View Order</p></div>
+            </a>
+
+            <a href="editdetails.html"> 
+                <div class="flex text-1xl font-[500] ml-[40px] mt-[20px] text-blue-700 hover:bg-gradient-to-r from-yellow-400 to-blue-700 hover:h-10 hover:w-[150px] hover:pt-2 hover:rounded-[25px] hover:text-white pb-2 hover:px-4 "><ion-icon class="mt-1" name="pie-chart-outline"></ion-icon><p class="ml-1">Edit Details</p></div>
+            </a>    
+                
+            
+        </div>
+        
+        <div class="w-[1030px] h-[700px] bg-white  ml-4 rounded-[15px] pt-[30px] shadow">
+            <div class="mt-8">
+                <h1 class="text-4xl font-[700] text-center text-yellow-400 ">Details</h1><br><br>
+                <p class="italic text-center mt-4 font-[500]"> Your #1 most reliable print partner </p>
+                <form action="" class="ml-[220px] mt-8">
+
+                    <input type="text" class="w-[300px] h-[50px] border-2 border-yellow-400 outline-none cursor-pointer placeholder-black font-[400] placeholder:font-[300] text-lg hover:shadow-2xl pl-6 rounded-md mr-4" placeholder="Client id" required>
+                    <input type="text" class="w-[300px] h-[50px] border-2 border-yellow-400 outline-none cursor-pointer placeholder-black font-[400] placeholder:font-[300] text-lg hover:shadow-2xl pl-6 rounded-md mr-4" placeholder="Customer name" required><br><br>
+
+                    <input type="text" class="w-[300px] h-[50px] border-2 border-yellow-400 outline-none cursor-pointer placeholder-black font-[400] placeholder:font-[300] text-lg hover:shadow-2xl pl-6 rounded-md mr-4" placeholder="Business Name" required>
+                    <input type="text" class="w-[300px] h-[50px] border-2 border-yellow-400 outline-none cursor-pointer placeholder-black font-[400] placeholder:font-[300] text-lg hover:shadow-2xl pl-6 rounded-md" placeholder="Business Address" required ><br><br>
+
+                    <input type="email" class="w-[300px] h-[50px] border-2 border-yellow-400 outline-none cursor-pointer placeholder-black font-[400] placeholder:font-[300] text-lg hover:shadow-2xl pl-6 rounded-md mr-4" placeholder="Email Address" >
+                    <input type="text" class="w-[300px] h-[50px] border-2 border-yellow-400 outline-none cursor-pointer placeholder-black font-[400] placeholder:font-[300] text-lg hover:shadow-2xl pl-6 rounded-md" placeholder="Phone Number" ><br><br><br><br>
+
+                    <button class="ml-[240px] w-[150px] h-[50px] shadow-xl border-2 border-grey text-center bg-gradient-to-r from-yellow-400 to-blue-700 hover:text-white rounded-md font-[500]">Submit</button>
+
+                </form>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+
+</body>
+</html>
