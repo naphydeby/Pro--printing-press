@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Client Dashboard</title>
+    <title>View Order</title>
     <script src="/tailwind2/tailwind.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
@@ -25,47 +25,46 @@
 
             <a href="editdetails.html"> 
                 <div class="flex text-1xl font-[500] ml-[40px] mt-[20px] text-blue-700 hover:bg-gradient-to-r from-yellow-400 to-blue-700 hover:h-10 hover:w-[150px] hover:pt-2 hover:rounded-[25px] hover:text-white pb-2 hover:px-4 "><ion-icon class="mt-1" name="pie-chart-outline"></ion-icon><p class="ml-1">Edit Details</p></div>
-            </a>    
-
+            </a>
+            
             <a href="clientpayment.html">
                 <div class="flex cursor-pointer text-1xl  font-[500] ml-[40px] mt-[15px] text-blue-700 hover:bg-gradient-to-r from-yellow-400 to-blue-700 hover:h-10 w-[150px] hover:pt-2 hover:rounded-[25px] hover:text-white hover:px-8 "><ion-icon class="mt-1" name="notifications-outline"></ion-icon><p class="ml-1"> Payment</p></div>
-            </a>   
+            </a>
                 
             
         </div>
         
         <div class="w-[1030px] h-[700px] bg-white  ml-4 rounded-[15px] pt-[30px] shadow">
-            <div class="mt-8">
-                <h1 class="text-4xl font-[700] text-center text-yellow-400 ">Profile</h1><br><br>
-                <!-- <p class="italic text-center mt-4 font-[500]"> Your #1 most reliable print partner </p> -->
-
-                <div class="ml-[250px]">
-
-                    <div class="flex gap-8">
-                        <h2 class="font-[500] text-lg">Customer Name:</h2>
-                        <p class=" bg-gray-100 w-[340px] h-[45px] text-center pt-2 rounded-md mt-[-5px]">Clientonbording </p>
-                    </div><br><br>
-
-                    <div class="flex gap-10">
-                        <h2 class=" font-[500] text-lg">Business Name:</h2>
-                        <p class="w-[340px] text-center bg-gray-100 h-[45px] pt-2 rounded-md mt-[-5px]">Samanta </p>
-                    </div><br><br>
-
-                    <div class="flex gap-6">
-                        <h2 class=" font-[500] text-lg">Business Address:</h2>
-                        <p class="text-center bg-gray-100 w-[340px] h-[45px] pt-2 rounded-md mt-[-5px]">3 Alfred Olaiya road idimu Lagos State</p>
-                    </div><br><br>
-                    <div class="flex gap-[119px]">
-                        <h2 class=" font-[500] text-lg">Email:</h2>
-                        <p class=" bg-gray-100 w-[340px] h-[45px] pt-2 text-center rounded-md mt-[-5px]">samanta043@gmail.com</p>
-                    </div><br><br>
-                    <div class="flex gap-10">
-                        <h2 class="font-[500] text-lg">Phone Number:</h2>
-                        <p class=" bg-gray-100 w-[340px] h-[45px] pt-2 text-center rounded-md mt-[-5px]">08056347256</p>
-                    </div>
+            <div class="mt-1">
+                <h1 class="text-4xl font-[700] text-center text-yellow-400 ">Payment History</h1><br><br>
+    
+                <div class=" rounded-[50px] ml-24 ">
+                    <input class="bg-blue-800 w-[800px] outline-none text-white placeholder:text-yellow-400 h-[65px] mt-[1px]  pl-16 rounded-[50px] " type="search" placeholder="Search....">
+                    <ion-icon class="text-yellow-400 ml-[-100px] mt-4 w-10 h-6" name="search-outline"></ion-icon>
                 </div>
-                
             </div>
+
+            <table class=" border-collapse  text-blue-800  text-[17px] ml-12 gap-10 mt-10 ">
+                <tr>
+                    <th class="border pl-6 " style="border-left: none; border-right: none;" >Id</th>
+                    <th class="border pl-6 " style="border-left: none; border-right: none;" >Customers Name</th>
+                    <th  class="border pl-6"style="border-left: none; border-right: none; ">Business Name</th>
+                    <th class="border py-2"style="border-left: none; border-right: none;">Email</th>
+                    <th class="border" style="border-left: none; border-right: none;">Phone Number</th>
+                    <th class="border pl-8"style="border-left: none; border-right: none;">Payment History</th>
+                </tr>
+         
+                <tr>
+                    <td class=" pl-6 py-2 text-[15px]">001</td>
+                    <td class=" pl-6 py-2 text-[15px]">Clientonbording</td>
+                    <td class="px-4 pl-6 text-[15px]">Samanta joshua</td>
+                    <td class=" px-4 py-4 text-[15px]">samanta043@gmail.com</td>
+                    <td class=" px-4 py-2 text-[15px]"> 08056347256</td>
+                    <a href="#"> <td class="underline px-4 pl-12 cursor-pointer text-[15px]">Reciept</td></a>
+                </tr>
+                
+         
+         </table>
         </div>
 
 
